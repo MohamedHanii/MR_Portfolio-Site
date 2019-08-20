@@ -1,0 +1,94 @@
+
+.scale{
+    padding-top:30px;
+}
+.img-thumbnail {
+    position: relative;
+    float: left;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    height:350px;
+    width:350px;
+    margin-bottom: 20px;
+
+}
+body{
+    background: #C9FFBF;  /*fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  /*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAFBD, #C9FFBF); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+    }
+a:hover img {
+  transform: scale(1.1);
+}
+img {
+
+  transition: transform .5s ease-in-out;
+}
+
+@media only screen and (max-width: 	768px ) {
+    .img-thumbnail {
+        height:auto;
+        width:auto;
+}
+}
+
+@media only screen and (max-width: 992px ) {
+     div.row div:nth-last-child(1) a>img.img-thumbnail{
+        width:100%;
+        height:650px;
+
+}
+}
+
+.video-frame{
+    width:95%;
+    height:500px;
+    margin: 20px;
+    border:4px solid beige;
+    border-radius: 25px;
+    background-position: left top;
+    background-repeat: repeat;
+}
+
+.adjust-spacing{
+    margin: 150px auto;
+    text-align:center;
+}
+
+hr.flare {
+    margin-top: 100px;
+    height: 50px;
+    border-style: ridge;
+    border-color: 	#a90000;
+    border-width: 1px 0 0 0;
+    border-radius: 45px;
+    
+    opacity: 0.7;
+}
+hr.flare:before {
+
+    display: block;
+    content: "";
+    height: 50px;
+    margin-top: -51px;
+    border-style: ridge;
+    border-color: #008000;
+    border-width: 0 0 1px 0;
+    border-radius: 45px;
+    opacity: 0.7;
+}
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+
+
+
+
+
+
+
+
+
