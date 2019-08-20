@@ -1,6 +1,7 @@
 var express = require("express"),
     app = express();
-
+const port = process.env.PORT || 3000;
+const ip = process.env.IP || "127.0.0.1";
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
@@ -24,7 +25,6 @@ app.get("/", function (req, res) {
     res.render("landing");
 });
 
-app.listen(3000,function() {
-    console.log("Server Start Running");
-    
+app.listen(port, function () {
+        console.log("Server has started .... at port " + port + " ip: " + ip);
 });
