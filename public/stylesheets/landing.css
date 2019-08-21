@@ -77,22 +77,22 @@ p{
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url(https://i.imgur.com/PYHwKBX.jpg) 
+  background-image: url(/Project_type_1/Images/Landing_1.jpg) 
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(https://i.imgur.com/SXelpei.jpg);
+  background-image: url(/Project_type_1/Images/Landing_2.jpg);
   animation-delay: 2.5s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(https://i.imgur.com/MTWlgp9.jpg);
+  background-image: url(/Project_type_1/Images/Landing_3.jpg);
   animation-delay: 5s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(https://i.imgur.com/DbIGaBi.jpg);
+  background-image: url(/Project_type_1/Images/Landing_4.jpg);
   animation-delay: 7.5s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(https://i.imgur.com/9hT1Yc4.jpg);
+  background-image: url(/Project_type_1/Images/Landing_5.jpg);
   animation-delay: 10s; 
 }
 
