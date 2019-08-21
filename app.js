@@ -20,7 +20,7 @@ app.get("/Presets",function(req,res){
 app.get("/Luts",function(req,res){
         res.render("luts");
 });
-
+ 
 app.get("/", function (req, res) {
     res.render("landing");
 });
