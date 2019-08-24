@@ -77,22 +77,22 @@ p{
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url('../Images/Landing1.jpg')
+  background-image: url('https://i.imgur.com/PYHwKBX.jpg')
 }
 .slideshow li:nth-child(2) { 
-  background-image: url('../Images/Landing2.jpg');
+  background-image: url('https://i.imgur.com/MTWlgp9.jpg');
   animation-delay: 2.5s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url('../Images/Landing3.jpg');
+  background-image: url('https://i.imgur.com/SXelpei.jpg');
   animation-delay: 5s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url('../Images/Landing4.jpg');
+  background-image: url('https://i.imgur.com/DbIGaBi.jpg');
   animation-delay: 7.5s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url('../Images/Landing5.jpg');
+  background-image: url('https://i.imgur.com/9hT1Yc4.jpg');
   animation-delay: 10s; 
 }
 
