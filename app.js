@@ -5,6 +5,7 @@ const ip = process.env.IP || "127.0.0.1";
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
+app.use('/my-virtual-directory', express.static(__dirname + '/public/images'));
 app.get("/Home",function(req,res){
     res.render("home.ejs");
 });
