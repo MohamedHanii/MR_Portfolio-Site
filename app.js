@@ -7,13 +7,13 @@ app.use(express.static(__dirname + "/public"));
 
 
 app.get("/Home",function(req,res){
-    res.render("home.ejs");
+    res.render("home.ejs",{page:"home"});
 });
 app.get("/Instgram",function(req,res){
-        res.render("instgram");
+        res.render("instgram", { page: "instgram" });
 });
 app.get("/Youtube",function(req,res){
-        res.render("youtube");
+        res.render("youtube", { page: "youtube" });
 });
 app.get("/Presets",function(req,res){
         res.render("presets");
