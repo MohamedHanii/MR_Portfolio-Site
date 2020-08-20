@@ -1,36 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>MR</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <link rel="stylesheet" href="/stylesheets/main.css">
-     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg  navbar-light" style="background-color: #f9f1f1;" >
-    <a class="navbar-brand" href="/home">MR</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-        <li class="nav-item <%= typeof page !== 'undefined' && page === 'home' ? 'active' : '' %>">
-            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item <%= typeof page !== 'undefined' && page === 'instgram' ? 'active' : '' %>">
-            <a class="nav-link" href="/instgram">Instgram</a>
-        </li>
-        <li class="nav-item <%= typeof page !== 'undefined' && page === 'youtube' ? 'active' : '' %>">
-            <a class="nav-link" href="/youtube">Youtube</a>
-        </li>
-        <%# <li class="nav-item">
-            <a class="nav-link" href="/presets">presets</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/luts">Luts</a>
-        </li> %>
-        </ul>
-    </div>
-    </nav>
-        
+
+<head>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/stylesheets/main.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+	<!-- Make site responsive on mobile/tablet -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>RagabxFilm</title>
+</head>
+
+<body>
+	<!-- <div>
+	<nav class="navbar navbar-expand-lg transparent navbar-inner ">
+		<div class="container-fluid ">
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			<div class="collapse navbar-collapse justify-content-stretch" id="navbarNav">
+				<ul class="navbar-nav  ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Gallery <span class="sr-only">(current)</span></a>
+					</li>
+
+				</ul>
+			</div>
+			<a class="navbar-brand middle-logo" href="#">RagabxFilm</a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+
+				</ul>
+			</dv>
+		</div>
+	</nav> -->
+
+
+	<nav class="navbar navbar-expand-lg navbar-light" id = "transparent">
+		<div class="container">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto ">
+					<li class="nav-item">
+						<a class="nav-link" href="#"> Gallery </span></a>
+					</li>
+					<li class="nav-item">
+					</li>
+				</ul>
+			</div>
+
+			<a class="navbar-brand" href="#">RAGABXFILM</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-4">
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us </span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>

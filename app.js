@@ -1,31 +1,41 @@
-var express = require("express"),
-    app = express();
-const port = process.env.PORT || 3000;
-const ip = process.env.IP || "127.0.0.1";
-app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"));
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
+var indexRouter = require('./routes/index');
+var aboutRouter = require('./routes/about');
 
-app.get("/Home",function(req,res){
-    res.render("home.ejs",{page:"home"});
-});
-app.get("/Instgram",function(req,res){
-        res.render("instgram", { page: "instgram" });
-});
-app.get("/Youtube",function(req,res){
-        res.render("youtube", { page: "youtube" });
-});
-app.get("/Presets",function(req,res){
-        res.render("presets");
-});
-app.get("/Luts",function(req,res){
-        res.render("luts");
-});
- 
-app.get("/", function (req, res) {
-    res.render("landing");
+var app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', indexRouter);
+app.use('/about', aboutRouter);
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
 });
 
-app.listen(port, function () {
-        console.log("Server has started .... at port " + port + " ip: " + ip);
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
 });
+
+module.exports = app;
